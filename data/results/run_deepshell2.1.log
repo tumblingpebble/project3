@@ -1,0 +1,96 @@
+Logging started. All output will be saved to ./data/results/run_deepshell2.1.log
+Using device: cuda
+Combined training data shape: (60000, 2304)
+Combined validation data shape: (10000, 2304)
+Applying PCA...
+No PCA applied. Using original data.
+Starting training...
+Epoch 1/250, Reconstruction Loss: 0.4389
+Epoch 10/250, Reconstruction Loss: 0.2639
+Epoch 20/250, Reconstruction Loss: 0.2511
+Epoch 30/250, Reconstruction Loss: 0.2451
+Epoch 40/250, Reconstruction Loss: 0.2421
+Epoch 50/250, Reconstruction Loss: 0.2396
+Epoch 60/250, Reconstruction Loss: 0.2378
+Epoch 70/250, Reconstruction Loss: 0.2366
+Epoch 80/250, Reconstruction Loss: 0.2352
+Epoch 90/250, Reconstruction Loss: 0.2337
+Epoch 100/250, Reconstruction Loss: 0.2345
+Epoch 110/250, Reconstruction Loss: 0.2333
+Epoch 120/250, Reconstruction Loss: 0.2315
+Epoch 130/250, Reconstruction Loss: 0.2309
+Epoch 140/250, Reconstruction Loss: 0.2299
+Epoch 150/250, Reconstruction Loss: 0.2307
+Epoch 160/250, Reconstruction Loss: 0.2287
+Epoch 170/250, Reconstruction Loss: 0.2288
+Epoch 180/250, Reconstruction Loss: 0.2279
+Epoch 190/250, Reconstruction Loss: 0.2284
+Epoch 200/250, Reconstruction Loss: 0.2282
+Epoch 210/250, Reconstruction Loss: 0.2272
+Epoch 220/250, Reconstruction Loss: 0.2275
+Epoch 230/250, Reconstruction Loss: 0.2269
+Epoch 240/250, Reconstruction Loss: 0.2264
+Epoch 250/250, Reconstruction Loss: 0.2268
+Evaluating clustering performance on training data for different number of clusters...
+Evaluating GMM with 8 clusters...
+Silhouette Score: 0.1353, Calinski-Harabasz Index: 5844.77, Davies-Bouldin Index: 1.9904
+Evaluating GMM with 9 clusters...
+Silhouette Score: 0.1569, Calinski-Harabasz Index: 6218.21, Davies-Bouldin Index: 1.7960
+Evaluating GMM with 10 clusters...
+Silhouette Score: 0.1534, Calinski-Harabasz Index: 5980.68, Davies-Bouldin Index: 1.8045
+Evaluating GMM with 11 clusters...
+Silhouette Score: 0.1262, Calinski-Harabasz Index: 5258.52, Davies-Bouldin Index: 2.2095
+Evaluating GMM with 12 clusters...
+Silhouette Score: 0.1202, Calinski-Harabasz Index: 5070.00, Davies-Bouldin Index: 2.2632
+Top 5 cluster numbers based on combined metrics: [12, 11, 8, 10, 9]
+
+Results for 12 clusters on validation data:
+Clustering Accuracy: 0.8577
+Cluster-to-Class Mapping: {0: 4, 1: 0, 2: 9, 3: 5, 4: 7, 5: 6, 6: 10, 7: 2, 8: 1, 9: 8, 10: 3, 11: 11}
+NMI Score: 0.8673
+ARI Score: 0.8420
+Silhouette Score: 0.1275
+Calinski-Harabasz Index: 887.54
+Davies-Bouldin Index: 2.3085
+Classification Accuracy on Validation Data: 0.8577
+
+Results for 11 clusters on validation data:
+Clustering Accuracy: 0.8781
+Cluster-to-Class Mapping: {0: 4, 1: 0, 2: 9, 3: 5, 4: 7, 5: 6, 6: 10, 7: 2, 8: 1, 9: 8, 10: 3}
+NMI Score: 0.8502
+ARI Score: 0.8211
+Silhouette Score: 0.1351
+Calinski-Harabasz Index: 926.79
+Davies-Bouldin Index: 2.2068
+Classification Accuracy on Validation Data: 0.8781
+
+Results for 8 clusters on validation data:
+Clustering Accuracy: 0.6354
+Cluster-to-Class Mapping: {0: 4, 1: 1, 2: 9, 3: 3, 4: 7, 5: 6, 6: 0, 7: 8, 8: 2, 9: 5}
+NMI Score: 0.7700
+ARI Score: 0.6255
+Silhouette Score: 0.1411
+Calinski-Harabasz Index: 1026.24
+Davies-Bouldin Index: 1.9902
+Classification Accuracy on Validation Data: 0.6354
+
+Results for 10 clusters on validation data:
+Clustering Accuracy: 0.9566
+Cluster-to-Class Mapping: {0: 4, 1: 0, 2: 9, 3: 3, 4: 7, 5: 5, 6: 6, 7: 2, 8: 1, 9: 8}
+NMI Score: 0.8940
+ARI Score: 0.9066
+Silhouette Score: 0.1613
+Calinski-Harabasz Index: 1049.00
+Davies-Bouldin Index: 1.7630
+Classification Accuracy on Validation Data: 0.9566
+
+Results for 9 clusters on validation data:
+Clustering Accuracy: 0.8638
+Cluster-to-Class Mapping: {0: 4, 1: 0, 2: 9, 3: 3, 4: 7, 5: 5, 6: 8, 7: 2, 8: 1, 9: 6}
+NMI Score: 0.8621
+ARI Score: 0.8152
+Silhouette Score: 0.1627
+Calinski-Harabasz Index: 1085.32
+Davies-Bouldin Index: 1.7810
+Classification Accuracy on Validation Data: 0.8638
+All metrics saved to ./data/results/clustering_metrics.csv
