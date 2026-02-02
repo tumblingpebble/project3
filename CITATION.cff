@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+type: software
+title: "DeepShell 2.0 / Project3"
+authors:
+  - family-names: "Aguilar"
+    given-names: "Jonathan"
+version: 1.0.0
+date-released: 2026-02-02
+url: "https://github.com/tumblingpebble/project3"
